@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header/header.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
+    <link rel="stylesheet" href="css/catalog/catalog.css" />
+  </head>
+  <body>
+    <a href="https://t.me/" target="_blank" class="fixed-icon fixed-icon-wa">
+      <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="512.000000pt"
+        height="512.000000pt"
+        viewBox="0 0 512.000000 512.000000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g
+          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+          fill="#ffffff"
+          stroke="none"
+        >
+          <path
+            d="M2315 5109 c-641 -66 -1211 -353 -1649 -829 -618 -671 -825 -1644
+ -536 -2520 131 -397 338 -729 641 -1027 402 -395 890 -632 1474 -715 119 -17
+ 512 -16 635 1 586 81 1091 331 1497 742 404 409 641 894 725 1484 17 118 17
+ 512 0 630 -48 337 -146 641 -295 910 -117 213 -253 395 -430 574 -398 403
+ -893 653 -1462 737 -123 18 -478 26 -600 13z m1440 -1543 c44 -19 65 -61 65
+ -131 0 -64 -423 -2072 -445 -2116 -32 -62 -101 -85 -171 -59 -24 9 -255 176
+ -593 427 l-84 62 -181 -173 c-133 -126 -191 -176 -215 -181 -18 -4 -35 -5 -37
+ -2 -3 3 4 148 16 324 l21 318 71 65 c38 36 309 281 601 545 293 265 532 487
+ 532 495 0 11 -11 15 -35 14 -29 -1 -177 -90 -777 -467 -407 -257 -746 -467
+ -752 -467 -27 0 -658 203 -688 221 -64 40 -50 99 33 146 22 12 181 77 354 143
+ 173 67 500 193 725 280 226 87 628 242 895 345 585 226 579 224 608 225 12 0
+ 38 -6 57 -14z"
+          />
+        </g>
+      </svg>
+    </a>
+    <a href="https://wa.me/" target="_blank" class="fixed-icon fixed-icon-tg">
+      <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="512.000000pt"
+        height="512.000000pt"
+        viewBox="0 0 512.000000 512.000000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g
+          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+          fill="#ffffff"
+          stroke="none"
+        >
+          <path
+            d="M2315 5109 c-800 -83 -1501 -518 -1927 -1196 -604 -960 -491 -2229
+ 272 -3065 423 -463 951 -740 1585 -830 118 -17 511 -16 635 0 579 80 1097 337
+ 1491 739 130 132 157 163 243 277 256 341 423 757 488 1211 17 118 17 512 0
+ 630 -43 303 -122 561 -247 814 -134 268 -270 459 -483 674 -395 400 -889 649
+ -1457 733 -123 18 -478 26 -600 13z m635 -1012 c895 -213 1403 -1117 1115
+ -1983 -74 -224 -192 -411 -370 -590 -225 -226 -468 -358 -785 -425 -87 -19
+ -137 -23 -290 -23 -253 -1 -411 32 -634 130 -55 24 -107 44 -116 44 -8 0 -190
+ -47 -405 -104 -214 -56 -391 -102 -392 -101 -2 1 46 179 105 395 l108 394 -47
+ 96 c-106 215 -153 420 -153 670 1 428 152 791 454 1090 237 235 537 381 885
+ 434 17 2 118 3 225 1 166 -3 211 -7 300 -28z"
+          />
+          <path
+            d="M2505 3868 c-490 -35 -938 -385 -1095 -856 -50 -152 -64 -242 -64
+ -412 0 -259 49 -432 195 -686 l23 -42 -62 -227 c-34 -125 -61 -230 -58 -232 2
+ -2 108 24 236 57 l233 62 121 -61 c199 -99 372 -141 587 -141 537 0 1028 354
+ 1198 866 51 155 64 234 64 404 0 122 -5 177 -22 260 -109 511 -511 903 -1021
+ 994 -109 19 -210 23 -335 14z m-303 -581 c32 -36 161 -355 154 -382 -3 -12
+ -33 -57 -66 -101 -33 -43 -60 -85 -60 -94 0 -19 80 -138 142 -211 67 -79 194
+ -175 301 -230 135 -67 142 -67 219 28 96 117 105 125 131 118 30 -9 316 -143
+ 346 -162 22 -14 23 -20 18 -82 -3 -37 -13 -86 -22 -109 -21 -52 -97 -122 -173
+ -159 -53 -26 -66 -28 -177 -28 -111 0 -127 3 -215 34 -145 52 -235 95 -344
+ 168 -210 140 -459 421 -561 634 -44 93 -58 163 -53 269 5 99 30 164 96 246 54
+ 66 90 83 175 84 59 0 71 -3 89 -23z"
+          />
+        </g>
+      </svg>
+    </a>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img
+              src="images/logo.png"
+              alt="Логотип"
+              class="header__logo-image"
+            />
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">About us</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Catalog</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__contacts contacts">
+            <a
+              href="https://t.me/"
+              class="header__contact header__contact--whatsapp"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512.000000pt"
+                height="512.000000pt"
+                viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                  fill="#ffffff"
+                  stroke="none"
+                >
+                  <path
+                    d="M2315 5109 c-641 -66 -1211 -353 -1649 -829 -618 -671 -825 -1644
+           -536 -2520 131 -397 338 -729 641 -1027 402 -395 890 -632 1474 -715 119 -17
+           512 -16 635 1 586 81 1091 331 1497 742 404 409 641 894 725 1484 17 118 17
+           512 0 630 -48 337 -146 641 -295 910 -117 213 -253 395 -430 574 -398 403
+           -893 653 -1462 737 -123 18 -478 26 -600 13z m1440 -1543 c44 -19 65 -61 65
+           -131 0 -64 -423 -2072 -445 -2116 -32 -62 -101 -85 -171 -59 -24 9 -255 176
+           -593 427 l-84 62 -181 -173 c-133 -126 -191 -176 -215 -181 -18 -4 -35 -5 -37
+           -2 -3 3 4 148 16 324 l21 318 71 65 c38 36 309 281 601 545 293 265 532 487
+           532 495 0 11 -11 15 -35 14 -29 -1 -177 -90 -777 -467 -407 -257 -746 -467
+           -752 -467 -27 0 -658 203 -688 221 -64 40 -50 99 33 146 22 12 181 77 354 143
+           173 67 500 193 725 280 226 87 628 242 895 345 585 226 579 224 608 225 12 0
+           38 -6 57 -14z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/"
+              class="header__contact header__contact--telegram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512.000000pt"
+                height="512.000000pt"
+                viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                  fill="#ffffff"
+                  stroke="none"
+                >
+                  <path
+                    d="M2315 5109 c-800 -83 -1501 -518 -1927 -1196 -604 -960 -491 -2229
+           272 -3065 423 -463 951 -740 1585 -830 118 -17 511 -16 635 0 579 80 1097 337
+           1491 739 130 132 157 163 243 277 256 341 423 757 488 1211 17 118 17 512 0
+           630 -43 303 -122 561 -247 814 -134 268 -270 459 -483 674 -395 400 -889 649
+           -1457 733 -123 18 -478 26 -600 13z m635 -1012 c895 -213 1403 -1117 1115
+           -1983 -74 -224 -192 -411 -370 -590 -225 -226 -468 -358 -785 -425 -87 -19
+           -137 -23 -290 -23 -253 -1 -411 32 -634 130 -55 24 -107 44 -116 44 -8 0 -190
+           -47 -405 -104 -214 -56 -391 -102 -392 -101 -2 1 46 179 105 395 l108 394 -47
+           96 c-106 215 -153 420 -153 670 1 428 152 791 454 1090 237 235 537 381 885
+           434 17 2 118 3 225 1 166 -3 211 -7 300 -28z"
+                  />
+                  <path
+                    d="M2505 3868 c-490 -35 -938 -385 -1095 -856 -50 -152 -64 -242 -64
+           -412 0 -259 49 -432 195 -686 l23 -42 -62 -227 c-34 -125 -61 -230 -58 -232 2
+           -2 108 24 236 57 l233 62 121 -61 c199 -99 372 -141 587 -141 537 0 1028 354
+           1198 866 51 155 64 234 64 404 0 122 -5 177 -22 260 -109 511 -511 903 -1021
+           994 -109 19 -210 23 -335 14z m-303 -581 c32 -36 161 -355 154 -382 -3 -12
+           -33 -57 -66 -101 -33 -43 -60 -85 -60 -94 0 -19 80 -138 142 -211 67 -79 194
+           -175 301 -230 135 -67 142 -67 219 28 96 117 105 125 131 118 30 -9 316 -143
+           346 -162 22 -14 23 -20 18 -82 -3 -37 -13 -86 -22 -109 -21 -52 -97 -122 -173
+           -159 -53 -26 -66 -28 -177 -28 -111 0 -127 3 -215 34 -145 52 -235 95 -344
+           168 -210 140 -459 421 -561 634 -44 93 -58 163 -53 269 5 99 30 164 96 246 54
+           66 90 83 175 84 59 0 71 -3 89 -23z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__language">
+            <span class="header__language-button active">EN</span>
+            <a href="#" class="header__language-button">RU</a>
+          </div>
+        </div>
+      </header>
+      <main class="main" id="main">
+        <section class="intro">
+          <div class="intro__container container"></div>
+        </section>
+        <section class="catalog">
+          <div class="catalog__container container">
+            <h2 class="catalog__title">
+              MODELS GALLERY
+            </h2>
+            <div class="catalog__items">
+              <div class="catalog__row">
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__column">
+                    <div class="catalog__image">
+                      <img src="images/img.jpg" alt="" />
+                    </div>
+                    <div class="catalog__thumbs catalog-thumbs">
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img1.jpg" alt="" />
+                      </div>
+                      <div class="catalog-thumbs__image">
+                        <img src="images/img2.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="catalog__info info-catalog">
+                      <h3 class="info-catalog__name">Angel</h3>
+                      <div class="info-catalog__row">
+                        <div class="info-catalog__height">155 cm</div>
+                        <div class="info-catalog__age">18 y.o.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top container">
+          <div class="footer__logo">
+            <img
+              src="images/logo.png"
+              alt="Логотип"
+              class="header__logo-image"
+            />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Catalog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts contacts">
+            <a
+              href="https://t.me/"
+              class="header__contact header__contact--whatsapp"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512.000000pt"
+                height="512.000000pt"
+                viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                  fill="#ffffff"
+                  stroke="none"
+                >
+                  <path
+                    d="M2315 5109 c-641 -66 -1211 -353 -1649 -829 -618 -671 -825 -1644
+           -536 -2520 131 -397 338 -729 641 -1027 402 -395 890 -632 1474 -715 119 -17
+           512 -16 635 1 586 81 1091 331 1497 742 404 409 641 894 725 1484 17 118 17
+           512 0 630 -48 337 -146 641 -295 910 -117 213 -253 395 -430 574 -398 403
+           -893 653 -1462 737 -123 18 -478 26 -600 13z m1440 -1543 c44 -19 65 -61 65
+           -131 0 -64 -423 -2072 -445 -2116 -32 -62 -101 -85 -171 -59 -24 9 -255 176
+           -593 427 l-84 62 -181 -173 c-133 -126 -191 -176 -215 -181 -18 -4 -35 -5 -37
+           -2 -3 3 4 148 16 324 l21 318 71 65 c38 36 309 281 601 545 293 265 532 487
+           532 495 0 11 -11 15 -35 14 -29 -1 -177 -90 -777 -467 -407 -257 -746 -467
+           -752 -467 -27 0 -658 203 -688 221 -64 40 -50 99 33 146 22 12 181 77 354 143
+           173 67 500 193 725 280 226 87 628 242 895 345 585 226 579 224 608 225 12 0
+           38 -6 57 -14z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/"
+              class="header__contact header__contact--telegram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="512.000000pt"
+                height="512.000000pt"
+                viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <g
+                  transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                  fill="#ffffff"
+                  stroke="none"
+                >
+                  <path
+                    d="M2315 5109 c-800 -83 -1501 -518 -1927 -1196 -604 -960 -491 -2229
+           272 -3065 423 -463 951 -740 1585 -830 118 -17 511 -16 635 0 579 80 1097 337
+           1491 739 130 132 157 163 243 277 256 341 423 757 488 1211 17 118 17 512 0
+           630 -43 303 -122 561 -247 814 -134 268 -270 459 -483 674 -395 400 -889 649
+           -1457 733 -123 18 -478 26 -600 13z m635 -1012 c895 -213 1403 -1117 1115
+           -1983 -74 -224 -192 -411 -370 -590 -225 -226 -468 -358 -785 -425 -87 -19
+           -137 -23 -290 -23 -253 -1 -411 32 -634 130 -55 24 -107 44 -116 44 -8 0 -190
+           -47 -405 -104 -214 -56 -391 -102 -392 -101 -2 1 46 179 105 395 l108 394 -47
+           96 c-106 215 -153 420 -153 670 1 428 152 791 454 1090 237 235 537 381 885
+           434 17 2 118 3 225 1 166 -3 211 -7 300 -28z"
+                  />
+                  <path
+                    d="M2505 3868 c-490 -35 -938 -385 -1095 -856 -50 -152 -64 -242 -64
+           -412 0 -259 49 -432 195 -686 l23 -42 -62 -227 c-34 -125 -61 -230 -58 -232 2
+           -2 108 24 236 57 l233 62 121 -61 c199 -99 372 -141 587 -141 537 0 1028 354
+           1198 866 51 155 64 234 64 404 0 122 -5 177 -22 260 -109 511 -511 903 -1021
+           994 -109 19 -210 23 -335 14z m-303 -581 c32 -36 161 -355 154 -382 -3 -12
+           -33 -57 -66 -101 -33 -43 -60 -85 -60 -94 0 -19 80 -138 142 -211 67 -79 194
+           -175 301 -230 135 -67 142 -67 219 28 96 117 105 125 131 118 30 -9 316 -143
+           346 -162 22 -14 23 -20 18 -82 -3 -37 -13 -86 -22 -109 -21 -52 -97 -122 -173
+           -159 -53 -26 -66 -28 -177 -28 -111 0 -127 3 -215 34 -145 52 -235 95 -344
+           168 -210 140 -459 421 -561 634 -44 93 -58 163 -53 269 5 99 30 164 96 246 54
+           66 90 83 175 84 59 0 71 -3 89 -23z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class="footer__bottom container">
+          <div class="footer__copyright">
+            <p class="footer__text">&copy; 2024 All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/jquery.fancybox.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

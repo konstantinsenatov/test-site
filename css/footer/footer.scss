@@ -1,0 +1,64 @@
+.footer {
+  background-color: var(--second-main-bg); // Темный фон футера
+  color: #ccc; // Светлый текст
+
+  &__top {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1919px) {
+      padding: 1.04vw;
+    }
+  }
+
+  &__contacts {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+  }
+
+  &__nav {
+    margin-left: 30px;
+    @media (max-width: 1919px) {
+      margin-left: 1.56vw;
+    }
+    & .footer__menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      &-item {
+        margin-right: 20px;
+        @media (max-width: 1919px) {
+          margin-right: 1.04vw;
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+        color: #ccc; // Светлый текст
+        font-size: 14px;
+        transition: all 0.3s ease 0s;
+        @media (max-width: 1919px) {
+          font-size: 0.73vw;
+        }
+        &:hover {
+          color: var(--hover-links-color); // Цвет при наведении
+        }
+      }
+    }
+  }
+  &__bottom {
+    text-align: center;
+    padding: 20px;
+    @media (max-width: 1919px) {
+      padding: 1.04vw;
+    }
+  }
+  &__copyright {
+    & .footer__text {
+      font-size: var(--text-smaller-size);
+      margin: 0;
+    }
+  }
+}
